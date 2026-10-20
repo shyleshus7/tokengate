@@ -1,0 +1,8 @@
+# Requires Python 3.13 (LiteLLM does not install on 3.14)
+headroom-ai[all]
+litellm
+google-adk
+streamlit
+pyyaml
+# LiteLLM needs the mcp 2.x types; the older mcp 1.x pulled in by other packages breaks it
+mcp>=2

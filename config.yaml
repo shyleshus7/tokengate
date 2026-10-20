@@ -1,0 +1,27 @@
+# TokenGate configuration - the ONE place to change settings.
+
+llm:
+  # Any model name LiteLLM understands, e.g. "gpt-4o-mini" or "anthropic/claude-haiku-4-5"
+  # model: "gpt-4o-mini"
+  model: "anthropic/claude-haiku-4-5"
+  # Name of the environment variable holding the API key (the key itself never goes in this file)
+  # api_key_env: "OPENAI_API_KEY"
+  api_key_env: "ANTHROPIC_API_KEY"
+  max_tokens: 200
+
+headroom:
+  # Master on/off switch for compression (flip this to compare; no code changes)
+  compression_enabled: false
+  # "callback" (HeadroomCallback) or "proxy" (LiteLLM api_base -> headroom proxy)
+  mode: "proxy"
+  proxy_port: 8787
+
+benchmark:
+  # Phase 4: how many times each task is run per mode
+  runs: 1
+
+org:
+  # Phase 4/5: defaults for the monthly savings extrapolation
+  devs: 50
+  requests_per_day: 40
+  working_days_per_month: 22

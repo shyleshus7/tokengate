@@ -1,0 +1,1002 @@
+[
+  {
+    "timestamp": "2026-10-19T09:00:00Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "3eb13b9046685257",
+    "host": "ip-10-0-8-36",
+    "latency_ms": 3021,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:00:17Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "0822e8f36c031199",
+    "host": "ip-10-0-1-24",
+    "latency_ms": 900,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:00:34Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "32e706298fadc1a6",
+    "host": "ip-10-0-18-108",
+    "latency_ms": 907,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:00:51Z",
+    "level": "ERROR",
+    "service": "payments-worker",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "ce4a2bbdc241330b",
+    "host": "ip-10-0-6-179",
+    "latency_ms": 1736,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:01:08Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Request completed successfully",
+    "trace_id": "c37459eef50bea63",
+    "host": "ip-10-0-11-27",
+    "latency_ms": 384,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:01:25Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Cache hit for session lookup",
+    "trace_id": "43b7a3a69a8dca03",
+    "host": "ip-10-0-2-187",
+    "latency_ms": 1886,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:01:42Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Request completed successfully",
+    "trace_id": "4b0dbb418d5288f1",
+    "host": "ip-10-0-20-227",
+    "latency_ms": 3534,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:01:59Z",
+    "level": "ERROR",
+    "service": "auth-service",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "0bbb259911ce5dd2",
+    "host": "ip-10-0-8-198",
+    "latency_ms": 1190,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:02:16Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Cache hit for session lookup",
+    "trace_id": "7412b29347294739",
+    "host": "ip-10-0-12-42",
+    "latency_ms": 1521,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:02:33Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Health check passed",
+    "trace_id": "aefcfad8efc89849",
+    "host": "ip-10-0-3-156",
+    "latency_ms": 2605,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:02:50Z",
+    "level": "ERROR",
+    "service": "auth-service",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "6123fdf77656af72",
+    "host": "ip-10-0-9-237",
+    "latency_ms": 2626,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:03:07Z",
+    "level": "ERROR",
+    "service": "auth-service",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "d7c524a55304317f",
+    "host": "ip-10-0-2-59",
+    "latency_ms": 3371,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:03:24Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "3602f8ac10f1bc81",
+    "host": "ip-10-0-19-225",
+    "latency_ms": 2945,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:03:41Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "ea1fca65e27a984d",
+    "host": "ip-10-0-15-37",
+    "latency_ms": 1089,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:03:58Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Health check passed",
+    "trace_id": "bf3c4c06434308bc",
+    "host": "ip-10-0-19-110",
+    "latency_ms": 3682,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:04:15Z",
+    "level": "WARN",
+    "service": "payments-worker",
+    "message": "Connection pool at 85% capacity",
+    "trace_id": "ff5e9ff0ff50bde4",
+    "host": "ip-10-0-5-131",
+    "latency_ms": 2026,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:04:32Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "28f49481a0a04dc4",
+    "host": "ip-10-0-14-153",
+    "latency_ms": 265,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:04:49Z",
+    "level": "WARN",
+    "service": "search-gateway",
+    "message": "Slow query detected (1.8s)",
+    "trace_id": "405cacec877409a9",
+    "host": "ip-10-0-18-221",
+    "latency_ms": 3865,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:05:06Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Cache hit for session lookup",
+    "trace_id": "a4161293c4c2e2e3",
+    "host": "ip-10-0-11-29",
+    "latency_ms": 1207,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:05:23Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Request completed successfully",
+    "trace_id": "b8db0672f42d47cc",
+    "host": "ip-10-0-9-249",
+    "latency_ms": 2055,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:05:40Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "d777a4774c66e0a8",
+    "host": "ip-10-0-17-156",
+    "latency_ms": 819,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:05:57Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Health check passed",
+    "trace_id": "c754108ff4188f3f",
+    "host": "ip-10-0-17-236",
+    "latency_ms": 7,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:06:14Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Request completed successfully",
+    "trace_id": "edd968311ca35cfb",
+    "host": "ip-10-0-12-225",
+    "latency_ms": 3411,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:06:31Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "913e4de2e0c53cb8",
+    "host": "ip-10-0-3-22",
+    "latency_ms": 3002,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:06:48Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Request completed successfully",
+    "trace_id": "a8e56e0c20de435d",
+    "host": "ip-10-0-16-243",
+    "latency_ms": 2256,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:07:05Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Health check passed",
+    "trace_id": "f6e07cc06c52c49f",
+    "host": "ip-10-0-7-238",
+    "latency_ms": 2213,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:07:22Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Cache hit for session lookup",
+    "trace_id": "abf3ad39fec21bbe",
+    "host": "ip-10-0-12-113",
+    "latency_ms": 3689,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:07:39Z",
+    "level": "WARN",
+    "service": "checkout-api",
+    "message": "Connection pool at 85% capacity",
+    "trace_id": "1064005c3985c3cf",
+    "host": "ip-10-0-11-6",
+    "latency_ms": 2414,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:07:56Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Request completed successfully",
+    "trace_id": "122c9a5601d74256",
+    "host": "ip-10-0-2-59",
+    "latency_ms": 281,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:08:13Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "474a493b3ceddf2d",
+    "host": "ip-10-0-16-55",
+    "latency_ms": 2213,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:08:30Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "NullPointerException in OrderMapper.map",
+    "trace_id": "c8dcd19f3e351128",
+    "host": "ip-10-0-16-207",
+    "latency_ms": 1672,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:08:47Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "5ab33edf6e595ed3",
+    "host": "ip-10-0-14-106",
+    "latency_ms": 1917,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:09:04Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "ba6c34ab6712303a",
+    "host": "ip-10-0-11-205",
+    "latency_ms": 3534,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:09:21Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Request completed successfully",
+    "trace_id": "72d8567d894a05e4",
+    "host": "ip-10-0-5-109",
+    "latency_ms": 756,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:09:38Z",
+    "level": "WARN",
+    "service": "auth-service",
+    "message": "Connection pool at 85% capacity",
+    "trace_id": "ceda8bbb71710434",
+    "host": "ip-10-0-18-26",
+    "latency_ms": 212,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:09:55Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "c0e9ab30ed2662e9",
+    "host": "ip-10-0-8-43",
+    "latency_ms": 1669,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:10:12Z",
+    "level": "WARN",
+    "service": "auth-service",
+    "message": "Slow query detected (1.8s)",
+    "trace_id": "0f02bad0e7067ef4",
+    "host": "ip-10-0-6-98",
+    "latency_ms": 13,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:10:29Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "b253d2186c4a37ea",
+    "host": "ip-10-0-18-170",
+    "latency_ms": 2947,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:10:46Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Cache hit for session lookup",
+    "trace_id": "f7fd564637bb3eec",
+    "host": "ip-10-0-2-149",
+    "latency_ms": 3018,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:11:03Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Request completed successfully",
+    "trace_id": "958ca9ba0cd620c2",
+    "host": "ip-10-0-16-129",
+    "latency_ms": 3770,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:11:20Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "d9f195d014822f53",
+    "host": "ip-10-0-6-18",
+    "latency_ms": 2442,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:11:37Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Request completed successfully",
+    "trace_id": "e3e9de99f10c718b",
+    "host": "ip-10-0-19-64",
+    "latency_ms": 2376,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:11:54Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Request completed successfully",
+    "trace_id": "a8499b926b5252e3",
+    "host": "ip-10-0-19-145",
+    "latency_ms": 2146,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:12:11Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Health check passed",
+    "trace_id": "506e5a9ab758588d",
+    "host": "ip-10-0-8-68",
+    "latency_ms": 1626,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:12:28Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "c07a30f2edd4253b",
+    "host": "ip-10-0-3-3",
+    "latency_ms": 1882,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:12:45Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "369147eb89a2688b",
+    "host": "ip-10-0-17-68",
+    "latency_ms": 547,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:13:02Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Cache hit for session lookup",
+    "trace_id": "286218b848f4ef12",
+    "host": "ip-10-0-15-214",
+    "latency_ms": 2230,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:13:19Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Health check passed",
+    "trace_id": "0200b1f08768a84f",
+    "host": "ip-10-0-18-77",
+    "latency_ms": 3821,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:13:36Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Cache hit for session lookup",
+    "trace_id": "e3c436571d8cbbac",
+    "host": "ip-10-0-4-191",
+    "latency_ms": 2271,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:13:53Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Health check passed",
+    "trace_id": "b7b56ea735ebd32d",
+    "host": "ip-10-0-11-53",
+    "latency_ms": 2820,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:14:10Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Cache hit for session lookup",
+    "trace_id": "e7c421c740497b71",
+    "host": "ip-10-0-2-24",
+    "latency_ms": 2603,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:14:27Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "c56811cd5563f616",
+    "host": "ip-10-0-5-164",
+    "latency_ms": 1077,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:14:44Z",
+    "level": "WARN",
+    "service": "search-gateway",
+    "message": "Retrying upstream call",
+    "trace_id": "8f9797b06d7ce3c9",
+    "host": "ip-10-0-1-29",
+    "latency_ms": 313,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:15:01Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Request completed successfully",
+    "trace_id": "5e84f058d5a804eb",
+    "host": "ip-10-0-19-142",
+    "latency_ms": 611,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:15:18Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Cache hit for session lookup",
+    "trace_id": "e623a6895d59cd2a",
+    "host": "ip-10-0-2-231",
+    "latency_ms": 1470,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:15:35Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Cache hit for session lookup",
+    "trace_id": "8f5486b7c7b5b2bc",
+    "host": "ip-10-0-14-250",
+    "latency_ms": 2547,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:15:52Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Request completed successfully",
+    "trace_id": "ccc56569f9e8a369",
+    "host": "ip-10-0-6-226",
+    "latency_ms": 1693,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:16:09Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Cache hit for session lookup",
+    "trace_id": "ab7f089acd5f4822",
+    "host": "ip-10-0-8-69",
+    "latency_ms": 657,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:16:26Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Request completed successfully",
+    "trace_id": "787f2425dbccc477",
+    "host": "ip-10-0-8-52",
+    "latency_ms": 3349,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:16:43Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Request completed successfully",
+    "trace_id": "060edf5b39118497",
+    "host": "ip-10-0-7-103",
+    "latency_ms": 1349,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:17:00Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Cache hit for session lookup",
+    "trace_id": "8268690ba43825b5",
+    "host": "ip-10-0-13-174",
+    "latency_ms": 3460,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:17:17Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "f86c2ca2e08596db",
+    "host": "ip-10-0-9-46",
+    "latency_ms": 2383,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:17:34Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "587ef3446f3f920c",
+    "host": "ip-10-0-11-112",
+    "latency_ms": 2488,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:17:51Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Health check passed",
+    "trace_id": "41357e8c30a900ad",
+    "host": "ip-10-0-2-182",
+    "latency_ms": 1791,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:18:08Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "f0b5156bb82c9074",
+    "host": "ip-10-0-7-94",
+    "latency_ms": 1771,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:18:25Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Cache hit for session lookup",
+    "trace_id": "d9178793a9d3c2e6",
+    "host": "ip-10-0-4-185",
+    "latency_ms": 3691,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:18:42Z",
+    "level": "ERROR",
+    "service": "payments-worker",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "5380b904688c7015",
+    "host": "ip-10-0-13-179",
+    "latency_ms": 1216,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:18:59Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Cache hit for session lookup",
+    "trace_id": "f0bbac67aa38d0a1",
+    "host": "ip-10-0-13-174",
+    "latency_ms": 3069,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:19:16Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "NullPointerException in OrderMapper.map",
+    "trace_id": "8c459ce267f48ad5",
+    "host": "ip-10-0-1-78",
+    "latency_ms": 1180,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:19:33Z",
+    "level": "WARN",
+    "service": "search-gateway",
+    "message": "Retrying upstream call",
+    "trace_id": "527eecfaa79ac9aa",
+    "host": "ip-10-0-15-114",
+    "latency_ms": 1816,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:19:50Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Cache hit for session lookup",
+    "trace_id": "e6b3c944cb323e35",
+    "host": "ip-10-0-6-169",
+    "latency_ms": 352,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:20:07Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "NullPointerException in OrderMapper.map",
+    "trace_id": "d184332417e8392a",
+    "host": "ip-10-0-8-173",
+    "latency_ms": 1276,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:20:24Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Request completed successfully",
+    "trace_id": "3eae00320bd4a990",
+    "host": "ip-10-0-16-157",
+    "latency_ms": 3485,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:20:41Z",
+    "level": "WARN",
+    "service": "inventory-db",
+    "message": "Retrying upstream call",
+    "trace_id": "31c681ec935f2b0a",
+    "host": "ip-10-0-13-127",
+    "latency_ms": 1641,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:20:58Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "6cd66193c7468f59",
+    "host": "ip-10-0-8-46",
+    "latency_ms": 3298,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:21:15Z",
+    "level": "ERROR",
+    "service": "inventory-db",
+    "message": "Timeout connecting to payments-db after 5000ms",
+    "trace_id": "3fcb75468eb22579",
+    "host": "ip-10-0-4-117",
+    "latency_ms": 551,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:21:32Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "f335cba3513a7052",
+    "host": "ip-10-0-15-157",
+    "latency_ms": 3343,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:21:49Z",
+    "level": "ERROR",
+    "service": "inventory-db",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "e5af6e39722764e6",
+    "host": "ip-10-0-6-191",
+    "latency_ms": 3533,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:22:06Z",
+    "level": "WARN",
+    "service": "payments-worker",
+    "message": "Connection pool at 85% capacity",
+    "trace_id": "a33dc7afd701410d",
+    "host": "ip-10-0-9-197",
+    "latency_ms": 3190,
+    "http_status": 500
+  },
+  {
+    "timestamp": "2026-10-19T09:22:23Z",
+    "level": "WARN",
+    "service": "auth-service",
+    "message": "Slow query detected (1.8s)",
+    "trace_id": "13d5f2f7709b7d97",
+    "host": "ip-10-0-10-61",
+    "latency_ms": 1117,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:22:40Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Request completed successfully",
+    "trace_id": "269cd696236c7b87",
+    "host": "ip-10-0-8-99",
+    "latency_ms": 2847,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:22:57Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Cache hit for session lookup",
+    "trace_id": "54b4a48268586eba",
+    "host": "ip-10-0-18-120",
+    "latency_ms": 1708,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:23:14Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "c51155ffe7a37e81",
+    "host": "ip-10-0-19-243",
+    "latency_ms": 2853,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:23:31Z",
+    "level": "ERROR",
+    "service": "inventory-db",
+    "message": "NullPointerException in OrderMapper.map",
+    "trace_id": "f1578470018267c4",
+    "host": "ip-10-0-12-77",
+    "latency_ms": 3091,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:23:48Z",
+    "level": "WARN",
+    "service": "search-gateway",
+    "message": "Retrying upstream call",
+    "trace_id": "8bcf53a1bc10fa52",
+    "host": "ip-10-0-20-230",
+    "latency_ms": 908,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:24:05Z",
+    "level": "INFO",
+    "service": "payments-worker",
+    "message": "Cache hit for session lookup",
+    "trace_id": "076e2bba7c5308bf",
+    "host": "ip-10-0-13-87",
+    "latency_ms": 2744,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:24:22Z",
+    "level": "WARN",
+    "service": "auth-service",
+    "message": "Slow query detected (1.8s)",
+    "trace_id": "20ac3703eb67146a",
+    "host": "ip-10-0-20-137",
+    "latency_ms": 115,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:24:39Z",
+    "level": "ERROR",
+    "service": "search-gateway",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "157d94a106f028ff",
+    "host": "ip-10-0-14-35",
+    "latency_ms": 3555,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:24:56Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Cache hit for session lookup",
+    "trace_id": "53cd6268610cf373",
+    "host": "ip-10-0-7-117",
+    "latency_ms": 1343,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:25:13Z",
+    "level": "WARN",
+    "service": "payments-worker",
+    "message": "Slow query detected (1.8s)",
+    "trace_id": "d5bcb8d04094dded",
+    "host": "ip-10-0-3-121",
+    "latency_ms": 84,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:25:30Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "NullPointerException in OrderMapper.map",
+    "trace_id": "a66fd7f739669fa7",
+    "host": "ip-10-0-3-200",
+    "latency_ms": 3926,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:25:47Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Request completed successfully",
+    "trace_id": "d6d7b3b833094d35",
+    "host": "ip-10-0-1-160",
+    "latency_ms": 629,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:26:04Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Health check passed",
+    "trace_id": "90604f621d48a071",
+    "host": "ip-10-0-7-120",
+    "latency_ms": 2870,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:26:21Z",
+    "level": "INFO",
+    "service": "auth-service",
+    "message": "Health check passed",
+    "trace_id": "f6b751f79b749245",
+    "host": "ip-10-0-4-200",
+    "latency_ms": 3360,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:26:38Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "edcb8cb60692dc63",
+    "host": "ip-10-0-10-148",
+    "latency_ms": 2779,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:26:55Z",
+    "level": "WARN",
+    "service": "auth-service",
+    "message": "Connection pool at 85% capacity",
+    "trace_id": "b0cc1b3b9793b9b4",
+    "host": "ip-10-0-8-27",
+    "latency_ms": 2860,
+    "http_status": 200
+  },
+  {
+    "timestamp": "2026-10-19T09:27:12Z",
+    "level": "ERROR",
+    "service": "checkout-api",
+    "message": "Upstream returned 503 Service Unavailable",
+    "trace_id": "0a8381bec85aca46",
+    "host": "ip-10-0-12-137",
+    "latency_ms": 1759,
+    "http_status": 503
+  },
+  {
+    "timestamp": "2026-10-19T09:27:29Z",
+    "level": "INFO",
+    "service": "checkout-api",
+    "message": "Health check passed",
+    "trace_id": "575aed2ca5c5650c",
+    "host": "ip-10-0-1-218",
+    "latency_ms": 1725,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:27:46Z",
+    "level": "INFO",
+    "service": "inventory-db",
+    "message": "Cache hit for session lookup",
+    "trace_id": "e43e4288a2b5b498",
+    "host": "ip-10-0-15-182",
+    "latency_ms": 631,
+    "http_status": 404
+  },
+  {
+    "timestamp": "2026-10-19T09:28:03Z",
+    "level": "INFO",
+    "service": "search-gateway",
+    "message": "Health check passed",
+    "trace_id": "9dac6e8345241ea6",
+    "host": "ip-10-0-18-199",
+    "latency_ms": 1985,
+    "http_status": 404
+  }
+]

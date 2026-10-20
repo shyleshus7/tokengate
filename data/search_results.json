@@ -1,0 +1,486 @@
+{
+  "query": "production incident runbooks",
+  "total": 60,
+  "results": [
+    {
+      "id": "doc-000",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-0",
+      "score": 0.69,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-03-15"
+    },
+    {
+      "id": "doc-001",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-1",
+      "score": 0.354,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-17"
+    },
+    {
+      "id": "doc-002",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-2",
+      "score": 0.93,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-03-17"
+    },
+    {
+      "id": "doc-003",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-3",
+      "score": 0.74,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-18"
+    },
+    {
+      "id": "doc-004",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-4",
+      "score": 0.92,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-19"
+    },
+    {
+      "id": "doc-005",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-5",
+      "score": 0.409,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-21"
+    },
+    {
+      "id": "doc-006",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-6",
+      "score": 0.506,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "id": "doc-007",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-7",
+      "score": 0.883,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-22"
+    },
+    {
+      "id": "doc-008",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-8",
+      "score": 0.374,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-28"
+    },
+    {
+      "id": "doc-009",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-9",
+      "score": 0.697,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-05-10"
+    },
+    {
+      "id": "doc-010",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-10",
+      "score": 0.489,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-25"
+    },
+    {
+      "id": "doc-011",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-11",
+      "score": 0.835,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-21"
+    },
+    {
+      "id": "doc-012",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-12",
+      "score": 0.739,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-05-14"
+    },
+    {
+      "id": "doc-013",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-13",
+      "score": 0.923,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-19"
+    },
+    {
+      "id": "doc-014",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-14",
+      "score": 0.323,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-14"
+    },
+    {
+      "id": "doc-015",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-15",
+      "score": 0.928,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-23"
+    },
+    {
+      "id": "doc-016",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-16",
+      "score": 0.439,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-21"
+    },
+    {
+      "id": "doc-017",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-17",
+      "score": 0.646,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-05-15"
+    },
+    {
+      "id": "doc-018",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-18",
+      "score": 0.931,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-19"
+    },
+    {
+      "id": "doc-019",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-19",
+      "score": 0.855,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-12"
+    },
+    {
+      "id": "doc-020",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-20",
+      "score": 0.82,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-22"
+    },
+    {
+      "id": "doc-021",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-21",
+      "score": 0.552,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-10"
+    },
+    {
+      "id": "doc-022",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-22",
+      "score": 0.67,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-21"
+    },
+    {
+      "id": "doc-023",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-23",
+      "score": 0.703,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-13"
+    },
+    {
+      "id": "doc-024",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-24",
+      "score": 0.625,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-20"
+    },
+    {
+      "id": "doc-025",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-25",
+      "score": 0.453,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-02-24"
+    },
+    {
+      "id": "doc-026",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-26",
+      "score": 0.748,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-02-14"
+    },
+    {
+      "id": "doc-027",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-27",
+      "score": 0.953,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-05-25"
+    },
+    {
+      "id": "doc-028",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-28",
+      "score": 0.367,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-14"
+    },
+    {
+      "id": "doc-029",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-29",
+      "score": 0.613,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-23"
+    },
+    {
+      "id": "doc-030",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-30",
+      "score": 0.812,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-03-23"
+    },
+    {
+      "id": "doc-031",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-31",
+      "score": 0.875,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "id": "doc-032",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-32",
+      "score": 0.776,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-24"
+    },
+    {
+      "id": "doc-033",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-33",
+      "score": 0.956,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-13"
+    },
+    {
+      "id": "doc-034",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-34",
+      "score": 0.676,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-11"
+    },
+    {
+      "id": "doc-035",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-35",
+      "score": 0.49,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-02-24"
+    },
+    {
+      "id": "doc-036",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-36",
+      "score": 0.757,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-11"
+    },
+    {
+      "id": "doc-037",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-37",
+      "score": 0.468,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-03-28"
+    },
+    {
+      "id": "doc-038",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-38",
+      "score": 0.347,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-16"
+    },
+    {
+      "id": "doc-039",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-39",
+      "score": 0.449,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-20"
+    },
+    {
+      "id": "doc-040",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-40",
+      "score": 0.844,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-18"
+    },
+    {
+      "id": "doc-041",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-41",
+      "score": 0.981,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-18"
+    },
+    {
+      "id": "doc-042",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-42",
+      "score": 0.376,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-14"
+    },
+    {
+      "id": "doc-043",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-43",
+      "score": 0.547,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-28"
+    },
+    {
+      "id": "doc-044",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-44",
+      "score": 0.311,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-05-11"
+    },
+    {
+      "id": "doc-045",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-45",
+      "score": 0.812,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-13"
+    },
+    {
+      "id": "doc-046",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-46",
+      "score": 0.629,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-26"
+    },
+    {
+      "id": "doc-047",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-47",
+      "score": 0.375,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-17"
+    },
+    {
+      "id": "doc-048",
+      "title": "Runbook: handling cache invalidation",
+      "url": "https://wiki.example.com/runbooks/cache-invalidation-48",
+      "score": 0.33,
+      "snippet": "When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see cache invalidation, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-19"
+    },
+    {
+      "id": "doc-049",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-49",
+      "score": 0.744,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-01-11"
+    },
+    {
+      "id": "doc-050",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-50",
+      "score": 0.885,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-13"
+    },
+    {
+      "id": "doc-051",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-51",
+      "score": 0.792,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-08-12"
+    },
+    {
+      "id": "doc-052",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-52",
+      "score": 0.522,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-03-12"
+    },
+    {
+      "id": "doc-053",
+      "title": "Runbook: handling 503 errors",
+      "url": "https://wiki.example.com/runbooks/503-errors-53",
+      "score": 0.49,
+      "snippet": "When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see 503 errors, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-20"
+    },
+    {
+      "id": "doc-054",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-54",
+      "score": 0.986,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-19"
+    },
+    {
+      "id": "doc-055",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-55",
+      "score": 0.649,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-13"
+    },
+    {
+      "id": "doc-056",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-56",
+      "score": 0.888,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-09-16"
+    },
+    {
+      "id": "doc-057",
+      "title": "Runbook: handling rollback procedure",
+      "url": "https://wiki.example.com/runbooks/rollback-procedure-57",
+      "score": 0.612,
+      "snippet": "When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see rollback procedure, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-04-23"
+    },
+    {
+      "id": "doc-058",
+      "title": "Runbook: handling connection pool",
+      "url": "https://wiki.example.com/runbooks/connection-pool-58",
+      "score": 0.871,
+      "snippet": "When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see connection pool, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-07-23"
+    },
+    {
+      "id": "doc-059",
+      "title": "Runbook: handling database timeout",
+      "url": "https://wiki.example.com/runbooks/database-timeout-59",
+      "score": 0.516,
+      "snippet": "When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. When you see database timeout, first check the dashboards, then inspect recent deploys, then escalate to the on-call engineer if the error rate stays above 5%. ",
+      "last_updated": "2026-06-18"
+    }
+  ]
+}

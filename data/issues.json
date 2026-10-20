@@ -1,0 +1,702 @@
+[
+  {
+    "number": 1001,
+    "title": "Payment retry duplicates charges (#1)",
+    "state": "closed",
+    "labels": [
+      "p1",
+      "performance"
+    ],
+    "author": "dev6",
+    "assignee": "dev14",
+    "created_at": "2026-10-08T02:00:00Z",
+    "comments": 8,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1002,
+    "title": "Payment retry duplicates charges (#2)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p1"
+    ],
+    "author": "dev10",
+    "assignee": "dev11",
+    "created_at": "2026-10-13T10:00:00Z",
+    "comments": 0,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1003,
+    "title": "Payment retry duplicates charges (#3)",
+    "state": "open",
+    "labels": [
+      "incident",
+      "tech-debt"
+    ],
+    "author": "dev4",
+    "assignee": "dev6",
+    "created_at": "2026-10-09T10:00:00Z",
+    "comments": 8,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1004,
+    "title": "Inventory count drifts (#4)",
+    "state": "closed",
+    "labels": [
+      "performance",
+      "p1"
+    ],
+    "author": "dev1",
+    "assignee": "dev9",
+    "created_at": "2026-10-07T02:00:00Z",
+    "comments": 7,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1005,
+    "title": "Flaky integration test (#5)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p1"
+    ],
+    "author": "dev13",
+    "assignee": "dev4",
+    "created_at": "2026-10-16T20:00:00Z",
+    "comments": 22,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1006,
+    "title": "Payment retry duplicates charges (#6)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "p2"
+    ],
+    "author": "dev5",
+    "assignee": "dev4",
+    "created_at": "2026-10-13T22:00:00Z",
+    "comments": 7,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1007,
+    "title": "Slow search queries (#7)",
+    "state": "closed",
+    "labels": [
+      "p1",
+      "performance"
+    ],
+    "author": "dev8",
+    "assignee": "dev9",
+    "created_at": "2026-10-17T11:00:00Z",
+    "comments": 13,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1008,
+    "title": "Flaky integration test (#8)",
+    "state": "closed",
+    "labels": [
+      "performance",
+      "p2"
+    ],
+    "author": "dev12",
+    "assignee": "dev8",
+    "created_at": "2026-10-09T09:00:00Z",
+    "comments": 8,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1009,
+    "title": "Auth token refresh loops (#9)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "incident"
+    ],
+    "author": "dev6",
+    "assignee": "dev2",
+    "created_at": "2026-10-18T22:00:00Z",
+    "comments": 5,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1010,
+    "title": "Auth token refresh loops (#10)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "tech-debt"
+    ],
+    "author": "dev5",
+    "assignee": "dev12",
+    "created_at": "2026-10-19T16:00:00Z",
+    "comments": 19,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1011,
+    "title": "Slow search queries (#11)",
+    "state": "open",
+    "labels": [
+      "incident",
+      "performance"
+    ],
+    "author": "dev4",
+    "assignee": "dev6",
+    "created_at": "2026-10-06T09:00:00Z",
+    "comments": 0,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1012,
+    "title": "Flaky integration test (#12)",
+    "state": "closed",
+    "labels": [
+      "incident",
+      "performance"
+    ],
+    "author": "dev1",
+    "assignee": "dev1",
+    "created_at": "2026-10-18T09:00:00Z",
+    "comments": 22,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1013,
+    "title": "Auth token refresh loops (#13)",
+    "state": "closed",
+    "labels": [
+      "tech-debt",
+      "bug"
+    ],
+    "author": "dev14",
+    "assignee": "dev1",
+    "created_at": "2026-10-19T09:00:00Z",
+    "comments": 15,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1014,
+    "title": "Payment retry duplicates charges (#14)",
+    "state": "open",
+    "labels": [
+      "performance",
+      "incident"
+    ],
+    "author": "dev1",
+    "assignee": "dev5",
+    "created_at": "2026-10-16T03:00:00Z",
+    "comments": 26,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1015,
+    "title": "Checkout fails with 503 under load (#15)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "bug"
+    ],
+    "author": "dev10",
+    "assignee": "dev11",
+    "created_at": "2026-10-02T04:00:00Z",
+    "comments": 4,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1016,
+    "title": "Inventory count drifts (#16)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "incident"
+    ],
+    "author": "dev2",
+    "assignee": "dev9",
+    "created_at": "2026-10-14T19:00:00Z",
+    "comments": 19,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1017,
+    "title": "Inventory count drifts (#17)",
+    "state": "open",
+    "labels": [
+      "p1",
+      "tech-debt"
+    ],
+    "author": "dev8",
+    "assignee": "dev15",
+    "created_at": "2026-10-15T09:00:00Z",
+    "comments": 27,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1018,
+    "title": "Inventory count drifts (#18)",
+    "state": "open",
+    "labels": [
+      "performance",
+      "p1"
+    ],
+    "author": "dev10",
+    "assignee": "dev1",
+    "created_at": "2026-10-04T06:00:00Z",
+    "comments": 20,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1019,
+    "title": "Auth token refresh loops (#19)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "bug"
+    ],
+    "author": "dev3",
+    "assignee": "dev4",
+    "created_at": "2026-10-06T17:00:00Z",
+    "comments": 2,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1020,
+    "title": "Auth token refresh loops (#20)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p2"
+    ],
+    "author": "dev12",
+    "assignee": "dev10",
+    "created_at": "2026-10-16T09:00:00Z",
+    "comments": 1,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1021,
+    "title": "Auth token refresh loops (#21)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "performance"
+    ],
+    "author": "dev12",
+    "assignee": "dev14",
+    "created_at": "2026-10-15T02:00:00Z",
+    "comments": 21,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1022,
+    "title": "Auth token refresh loops (#22)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "p1"
+    ],
+    "author": "dev11",
+    "assignee": "dev13",
+    "created_at": "2026-10-07T13:00:00Z",
+    "comments": 3,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1023,
+    "title": "Inventory count drifts (#23)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "incident"
+    ],
+    "author": "dev15",
+    "assignee": "dev5",
+    "created_at": "2026-10-05T02:00:00Z",
+    "comments": 1,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1024,
+    "title": "Auth token refresh loops (#24)",
+    "state": "open",
+    "labels": [
+      "p1",
+      "p2"
+    ],
+    "author": "dev15",
+    "assignee": "dev5",
+    "created_at": "2026-10-15T03:00:00Z",
+    "comments": 14,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1025,
+    "title": "Flaky integration test (#25)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "tech-debt"
+    ],
+    "author": "dev5",
+    "assignee": "dev9",
+    "created_at": "2026-10-18T15:00:00Z",
+    "comments": 14,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1026,
+    "title": "Checkout fails with 503 under load (#26)",
+    "state": "closed",
+    "labels": [
+      "bug",
+      "tech-debt"
+    ],
+    "author": "dev12",
+    "assignee": "dev6",
+    "created_at": "2026-10-09T00:00:00Z",
+    "comments": 2,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1027,
+    "title": "Auth token refresh loops (#27)",
+    "state": "closed",
+    "labels": [
+      "p1",
+      "p2"
+    ],
+    "author": "dev1",
+    "assignee": "dev13",
+    "created_at": "2026-10-09T18:00:00Z",
+    "comments": 1,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1028,
+    "title": "Auth token refresh loops (#28)",
+    "state": "open",
+    "labels": [
+      "p1",
+      "tech-debt"
+    ],
+    "author": "dev15",
+    "assignee": "dev5",
+    "created_at": "2026-10-06T18:00:00Z",
+    "comments": 13,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1029,
+    "title": "Flaky integration test (#29)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "tech-debt"
+    ],
+    "author": "dev6",
+    "assignee": "dev7",
+    "created_at": "2026-10-11T10:00:00Z",
+    "comments": 21,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1030,
+    "title": "Checkout fails with 503 under load (#30)",
+    "state": "open",
+    "labels": [
+      "performance",
+      "tech-debt"
+    ],
+    "author": "dev12",
+    "assignee": "dev8",
+    "created_at": "2026-10-10T21:00:00Z",
+    "comments": 30,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1031,
+    "title": "Payment retry duplicates charges (#31)",
+    "state": "closed",
+    "labels": [
+      "bug",
+      "tech-debt"
+    ],
+    "author": "dev2",
+    "assignee": "dev6",
+    "created_at": "2026-10-09T10:00:00Z",
+    "comments": 3,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1032,
+    "title": "Payment retry duplicates charges (#32)",
+    "state": "closed",
+    "labels": [
+      "bug",
+      "p1"
+    ],
+    "author": "dev8",
+    "assignee": "dev7",
+    "created_at": "2026-10-02T06:00:00Z",
+    "comments": 16,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1033,
+    "title": "Slow search queries (#33)",
+    "state": "closed",
+    "labels": [
+      "tech-debt",
+      "p2"
+    ],
+    "author": "dev13",
+    "assignee": "dev1",
+    "created_at": "2026-10-07T08:00:00Z",
+    "comments": 17,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1034,
+    "title": "Auth token refresh loops (#34)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p2"
+    ],
+    "author": "dev2",
+    "assignee": "dev1",
+    "created_at": "2026-10-08T22:00:00Z",
+    "comments": 5,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1035,
+    "title": "Slow search queries (#35)",
+    "state": "closed",
+    "labels": [
+      "bug",
+      "p1"
+    ],
+    "author": "dev7",
+    "assignee": "dev2",
+    "created_at": "2026-10-08T03:00:00Z",
+    "comments": 14,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1036,
+    "title": "Checkout fails with 503 under load (#36)",
+    "state": "closed",
+    "labels": [
+      "incident",
+      "tech-debt"
+    ],
+    "author": "dev15",
+    "assignee": "dev12",
+    "created_at": "2026-10-10T16:00:00Z",
+    "comments": 22,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1037,
+    "title": "Slow search queries (#37)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p2"
+    ],
+    "author": "dev4",
+    "assignee": "dev8",
+    "created_at": "2026-10-18T04:00:00Z",
+    "comments": 12,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1038,
+    "title": "Auth token refresh loops (#38)",
+    "state": "closed",
+    "labels": [
+      "p1",
+      "incident"
+    ],
+    "author": "dev14",
+    "assignee": "dev2",
+    "created_at": "2026-10-09T13:00:00Z",
+    "comments": 10,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1039,
+    "title": "Inventory count drifts (#39)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "performance"
+    ],
+    "author": "dev12",
+    "assignee": "dev5",
+    "created_at": "2026-10-19T18:00:00Z",
+    "comments": 21,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1040,
+    "title": "Payment retry duplicates charges (#40)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "p1"
+    ],
+    "author": "dev8",
+    "assignee": "dev6",
+    "created_at": "2026-10-11T17:00:00Z",
+    "comments": 24,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1041,
+    "title": "Inventory count drifts (#41)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "performance"
+    ],
+    "author": "dev14",
+    "assignee": "dev4",
+    "created_at": "2026-10-08T18:00:00Z",
+    "comments": 12,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1042,
+    "title": "Auth token refresh loops (#42)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "performance"
+    ],
+    "author": "dev12",
+    "assignee": "dev8",
+    "created_at": "2026-10-13T12:00:00Z",
+    "comments": 21,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1043,
+    "title": "Flaky integration test (#43)",
+    "state": "open",
+    "labels": [
+      "tech-debt",
+      "bug"
+    ],
+    "author": "dev3",
+    "assignee": "dev9",
+    "created_at": "2026-10-19T10:00:00Z",
+    "comments": 27,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1044,
+    "title": "Checkout fails with 503 under load (#44)",
+    "state": "open",
+    "labels": [
+      "bug",
+      "p1"
+    ],
+    "author": "dev15",
+    "assignee": "dev8",
+    "created_at": "2026-10-01T23:00:00Z",
+    "comments": 4,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1045,
+    "title": "Payment retry duplicates charges (#45)",
+    "state": "closed",
+    "labels": [
+      "incident",
+      "bug"
+    ],
+    "author": "dev8",
+    "assignee": "dev13",
+    "created_at": "2026-10-09T10:00:00Z",
+    "comments": 19,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1046,
+    "title": "Flaky integration test (#46)",
+    "state": "open",
+    "labels": [
+      "p2",
+      "bug"
+    ],
+    "author": "dev14",
+    "assignee": "dev6",
+    "created_at": "2026-10-18T12:00:00Z",
+    "comments": 30,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1047,
+    "title": "Slow search queries (#47)",
+    "state": "closed",
+    "labels": [
+      "p2",
+      "tech-debt"
+    ],
+    "author": "dev14",
+    "assignee": "dev9",
+    "created_at": "2026-10-02T19:00:00Z",
+    "comments": 2,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1048,
+    "title": "Auth token refresh loops (#48)",
+    "state": "closed",
+    "labels": [
+      "p2",
+      "performance"
+    ],
+    "author": "dev4",
+    "assignee": "dev12",
+    "created_at": "2026-10-03T13:00:00Z",
+    "comments": 3,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1049,
+    "title": "Flaky integration test (#49)",
+    "state": "closed",
+    "labels": [
+      "bug",
+      "tech-debt"
+    ],
+    "author": "dev3",
+    "assignee": "dev12",
+    "created_at": "2026-10-10T00:00:00Z",
+    "comments": 1,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  },
+  {
+    "number": 1050,
+    "title": "Slow search queries (#50)",
+    "state": "open",
+    "labels": [
+      "performance",
+      "p2"
+    ],
+    "author": "dev6",
+    "assignee": "dev7",
+    "created_at": "2026-10-05T07:00:00Z",
+    "comments": 16,
+    "body": "Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. Steps to reproduce: deploy the latest build, send traffic to the affected endpoint, and observe errors in the dashboard. Expected normal behavior. "
+  }
+]

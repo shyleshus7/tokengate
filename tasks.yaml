@@ -1,0 +1,15 @@
+# Fixed list of tasks the benchmark runs twice (compression off, then on).
+# Each task makes the agent call one or more of the large-payload tools.
+tasks:
+  - id: checkout-failures
+    question: "Checkout is failing in production. Check the recent logs, open GitHub issues and runbooks, then tell me the most likely cause and what to do first."
+  - id: error-summary
+    question: "Summarize the ERROR-level log entries by service. Which service is the noisiest?"
+  - id: open-p1-issues
+    question: "List the open GitHub issues labeled p1 and say which look related to checkout or payments."
+  - id: slow-queries
+    question: "Are there slow queries or connection pool warnings in the logs? Check the runbooks for the recommended fix."
+  - id: rollback-guidance
+    question: "We want to roll back the latest deploy. Find the rollback runbooks and any open issues that suggest a bad deploy."
+  - id: on-call-brief
+    question: "Write a three-bullet on-call handover: what the logs show, what the issues show, and which runbook to follow."
