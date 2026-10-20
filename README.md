@@ -27,6 +27,10 @@ python -m src.check_headroom        # headroom doctor + proxy start check
 
 ## Architecture
 
+![TokenGate architecture: with vs without the Headroom gateway](images/tokengate-architecture.png)
+
+Pipeline of this repo (ASCII):
+
 ```
                         config.yaml (model, mode, toggle, org numbers)
                                       |
