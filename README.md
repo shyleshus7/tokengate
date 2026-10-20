@@ -1,1 +1,1 @@
-# Token Gate
+# Token Gate - An Org-Wide LLM Compression Gateway
