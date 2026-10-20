@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TokenGate — Architecture: With vs Without Headroom</title>
+<style>
+  :root{
+    --ink:#1c2733;
+    --paper:#eef2f5;
+    --panel:#ffffff;
+    --line:#c4ced6;
+    --heavy:#e05252;      /* uncompressed token flow */
+    --lean:#1f9d6b;       /* compressed token flow */
+    --accent:#2b6cb0;     /* gateway blue */
+    --mono:'SFMono-Regular',ui-monospace,'Cascadia Mono','Roboto Mono',Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--mono);
+    padding:32px 20px 48px;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+  header{margin-bottom:26px;border-bottom:2px solid var(--ink);padding-bottom:14px}
+  header h1{font-size:22px;letter-spacing:.02em;font-weight:700}
+  header p{font-size:12.5px;color:#4a5a68;margin-top:6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:920px){.grid{grid-template-columns:1fr}}
+  .panel{
+    background:var(--panel);
+    border:1.5px solid var(--line);
+    border-radius:6px;
+    padding:16px 14px 10px;
+  }
+  .panel h2{
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    padding:4px 10px;display:inline-block;border-radius:3px;margin-bottom:4px;
+  }
+  .panel.before h2{background:#fbe4e4;color:#a83232}
+  .panel.after h2{background:#ddf2e8;color:#177a52}
+  .panel .sub{font-size:11.5px;color:#5c6b78;margin:2px 0 8px 2px}
+  svg{width:100%;height:auto;display:block}
+  .legend{
+    margin-top:22px;background:var(--panel);border:1.5px solid var(--line);
+    border-radius:6px;padding:14px 18px;font-size:12px;
+    display:flex;gap:28px;flex-wrap:wrap;align-items:center;
+  }
+  .key{display:flex;align-items:center;gap:8px}
+  .swatch{width:34px;height:0;border-top-style:solid}
+  .sw-heavy{border-top-width:2px;border-top-color:#8fa0ae}
+  .sw-lean{border-top-width:2px;border-top-color:var(--lean)}
+  .sw-box{width:16px;height:16px;border:1.5px solid var(--accent);background:#e3edf7;border-radius:3px}
+  .note{color:#5c6b78}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>TokenGate — Org LLM Traffic, With vs Without the Headroom Gateway</h1>
+    <p>Same agents, same answers — the gateway shrinks what travels to the provider (100% → ~10–40% of tokens).</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- ============ WITHOUT ============ -->
+    <div class="panel before">
+      <h2>Without Headroom — today</h2>
+      <p class="sub">Every developer &amp; agent sends full-fat context straight to the provider.</p>
+      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture without Headroom">
+        <defs>
+          <marker id="ah-r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L7,3 L0,6 Z" fill="#8fa0ae"/>
+          </marker>
+        </defs>
+
+        <!-- Clients column -->
+        <g font-family="inherit" font-size="12" fill="#1c2733">
+          <rect x="20" y="30" width="180" height="52" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="110" y="52" text-anchor="middle" font-weight="700">Dev 1 · ADK Agent</text>
+          <text x="110" y="70" text-anchor="middle" font-size="10.5" fill="#5c6b78">tool outputs · logs · JSON</text>
+
+          <rect x="20" y="110" width="180" height="52" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="110" y="132" text-anchor="middle" font-weight="700">Dev 2 · Coding Agent</text>
+          <text x="110" y="150" text-anchor="middle" font-size="10.5" fill="#5c6b78">file reads · repo search</text>
+
+          <rect x="20" y="190" width="180" height="52" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="110" y="212" text-anchor="middle" font-weight="700">CI Pipeline Agents</text>
+          <text x="110" y="230" text-anchor="middle" font-size="10.5" fill="#5c6b78">RAG chunks · test logs</text>
+
+          <rect x="20" y="270" width="180" height="52" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="110" y="292" text-anchor="middle" font-weight="700">Dev N · Any App</text>
+          <text x="110" y="310" text-anchor="middle" font-size="10.5" fill="#5c6b78">full conversation history</text>
+        </g>
+
+        <!-- LiteLLM box -->
+        <rect x="255" y="120" width="120" height="120" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+        <text x="315" y="172" text-anchor="middle" font-size="12" font-weight="700">LiteLLM</text>
+        <text x="315" y="190" text-anchor="middle" font-size="10.5" fill="#5c6b78">routing only</text>
+
+        <!-- Provider -->
+        <rect x="415" y="120" width="105" height="120" rx="5" fill="#fdf3f3" stroke="#c76b6b" stroke-width="1.6"/>
+        <text x="467" y="168" text-anchor="middle" font-size="12" font-weight="700">LLM</text>
+        <text x="467" y="184" text-anchor="middle" font-size="12" font-weight="700">Provider</text>
+        <text x="467" y="204" text-anchor="middle" font-size="10.5" fill="#a83232">bills every token</text>
+
+        <!-- arrows clients -> litellm -->
+        <g stroke="#8fa0ae" fill="none" stroke-width="1.5" marker-end="url(#ah-r)">
+          <path d="M200,56  C 232,56 236,150 250,158"/>
+          <path d="M200,136 C 226,136 230,168 250,172"/>
+          <path d="M200,216 C 226,216 230,192 250,188"/>
+          <path d="M200,296 C 232,296 236,210 250,202"/>
+        </g>
+        <!-- litellm -> provider -->
+        <path d="M375,180 L 410,180" stroke="#8fa0ae" stroke-width="1.5" fill="none" marker-end="url(#ah-r)"/>
+        <text x="392" y="166" text-anchor="middle" font-size="10.5" fill="#a83232" font-weight="700">100%</text>
+        <text x="392" y="200" text-anchor="middle" font-size="10" fill="#a83232">tokens</text>
+
+        <!-- consequences strip -->
+        <g font-size="11.5">
+          <rect x="20" y="370" width="500" height="150" rx="5" fill="#fbf0f0" stroke="#dcb6b6" stroke-width="1.2"/>
+          <text x="36" y="396" font-weight="700" fill="#a83232">RESULT</text>
+          <text x="36" y="420" fill="#1c2733">▸ 100 log entries → 100 log entries sent, verbatim</text>
+          <text x="36" y="444" fill="#1c2733">▸ Cost scales with every dev &amp; every agent added</text>
+          <text x="36" y="468" fill="#1c2733">▸ No org-wide visibility into token spend</text>
+          <text x="36" y="492" fill="#1c2733">▸ Context windows fill up fast on JSON-heavy tools</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- ============ WITH ============ -->
+    <div class="panel after">
+      <h2>With TokenGate — Headroom gateway</h2>
+      <p class="sub">All traffic routes through one gateway: compress first, then call the provider.</p>
+      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture with Headroom gateway">
+        <defs>
+          <marker id="ah-r2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L7,3 L0,6 Z" fill="#8fa0ae"/>
+          </marker>
+          <marker id="ah-g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M0,0 L7,3 L0,6 Z" fill="#1f9d6b"/>
+          </marker>
+        </defs>
+
+        <!-- Clients column (unchanged!) -->
+        <g font-size="12" fill="#1c2733">
+          <rect x="20" y="30" width="150" height="48" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="95" y="50" text-anchor="middle" font-weight="700">Dev 1 · ADK</text>
+          <text x="95" y="66" text-anchor="middle" font-size="10.5" fill="#5c6b78">unchanged code</text>
+
+          <rect x="20" y="102" width="150" height="48" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="95" y="122" text-anchor="middle" font-weight="700">Dev 2 · Coding</text>
+          <text x="95" y="138" text-anchor="middle" font-size="10.5" fill="#5c6b78">unchanged code</text>
+
+          <rect x="20" y="174" width="150" height="48" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="95" y="194" text-anchor="middle" font-weight="700">CI Agents</text>
+          <text x="95" y="210" text-anchor="middle" font-size="10.5" fill="#5c6b78">unchanged code</text>
+
+          <rect x="20" y="246" width="150" height="48" rx="5" fill="#f7f9fb" stroke="#8fa0ae" stroke-width="1.4"/>
+          <text x="95" y="266" text-anchor="middle" font-weight="700">Dev N · App</text>
+          <text x="95" y="282" text-anchor="middle" font-size="10.5" fill="#5c6b78">api_base → gateway</text>
+        </g>
+
+        <!-- arrows into gateway -->
+        <g stroke="#8fa0ae" fill="none" stroke-width="1.5" marker-end="url(#ah-r2)">
+          <path d="M170,54  C 200,54 200,130 211,140"/>
+          <path d="M170,126 C 196,126 198,152 211,156"/>
+          <path d="M170,198 C 196,198 198,178 211,172"/>
+          <path d="M170,270 C 200,270 200,196 211,188"/>
+        </g>
+
+        <!-- Gateway box -->
+        <rect x="216" y="96" width="150" height="180" rx="6" fill="#e3edf7" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="291" y="120" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1c4e82">TOKENGATE</text>
+        <text x="291" y="136" text-anchor="middle" font-size="10.5" fill="#2b6cb0">Headroom + LiteLLM</text>
+        <g font-size="10.5" fill="#1c2733">
+          <rect x="230" y="148" width="122" height="24" rx="3" fill="#ffffff" stroke="#9db8d2"/>
+          <text x="291" y="164" text-anchor="middle">ContentRouter</text>
+          <rect x="230" y="178" width="122" height="24" rx="3" fill="#ffffff" stroke="#9db8d2"/>
+          <text x="291" y="194" text-anchor="middle">SmartCrusher · AST</text>
+          <rect x="230" y="208" width="122" height="24" rx="3" fill="#ffffff" stroke="#9db8d2"/>
+          <text x="291" y="224" text-anchor="middle">CCR cache (reversible)</text>
+          <rect x="230" y="238" width="122" height="24" rx="3" fill="#ffffff" stroke="#9db8d2"/>
+          <text x="291" y="254" text-anchor="middle">LiteLLM cost meter</text>
+        </g>
+
+        <!-- lean arrow -> provider -->
+        <path d="M366,186 L 410,186" stroke="#1f9d6b" stroke-width="1.8" fill="none" marker-end="url(#ah-g)"/>
+        <text x="386" y="172" text-anchor="middle" font-size="10.5" fill="#177a52" font-weight="700">~10–40%</text>
+        <text x="386" y="208" text-anchor="middle" font-size="10" fill="#177a52">tokens</text>
+
+        <!-- Provider -->
+        <rect x="415" y="126" width="105" height="120" rx="5" fill="#eefaf4" stroke="#5aa886" stroke-width="1.6"/>
+        <text x="467" y="174" text-anchor="middle" font-size="12" font-weight="700">LLM</text>
+        <text x="467" y="190" text-anchor="middle" font-size="12" font-weight="700">Provider</text>
+        <text x="467" y="210" text-anchor="middle" font-size="10.5" fill="#177a52">same answers</text>
+
+        <!-- dashboard tap -->
+        <path d="M291,276 L 291,318" stroke="#2b6cb0" stroke-width="1.6" stroke-dasharray="5 4" fill="none"/>
+        <rect x="196" y="320" width="190" height="40" rx="5" fill="#ffffff" stroke="#2b6cb0" stroke-width="1.6"/>
+        <text x="291" y="337" text-anchor="middle" font-size="11" font-weight="700" fill="#1c4e82">Savings Dashboard</text>
+        <text x="291" y="352" text-anchor="middle" font-size="10" fill="#5c6b78">tokens · $ saved · per team</text>
+
+        <!-- consequences strip -->
+        <g font-size="11.5">
+          <rect x="20" y="392" width="500" height="128" rx="5" fill="#eef8f2" stroke="#b3d9c6" stroke-width="1.2"/>
+          <text x="36" y="418" font-weight="700" fill="#177a52">RESULT</text>
+          <text x="36" y="442" fill="#1c2733">▸ 60–95% fewer tokens on JSON tool outputs</text>
+          <text x="36" y="466" fill="#1c2733">▸ One api_base change per dev — zero code rewrites</text>
+          <text x="36" y="490" fill="#1c2733">▸ Org-wide $ savings measured &amp; extrapolated live</text>
+          <text x="36" y="514" fill="#1c2733">▸ Reversible: originals retrievable on demand (CCR)</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="key"><span class="swatch sw-heavy"></span> request flow</span>
+    <span class="key"><span class="swatch sw-lean"></span> compressed flow (after Headroom)</span>
+    <span class="key"><span class="sw-box"></span> TokenGate gateway (shared, org-wide)</span>
+    <span class="note">Compression happens inside the org — data stays local; only the lean prompt reaches the provider.</span>
+  </div>
+</div>
+</body>
+</html>
