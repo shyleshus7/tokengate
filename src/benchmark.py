@@ -7,6 +7,7 @@ Output: results/run_<timestamp>.json
 import json
 import os
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -29,9 +30,9 @@ def run_mode(tasks: list, runs: int, compression_enabled: bool) -> dict:
     """Run every task `runs` times in one mode. Returns {task_id: averaged stats + answer}."""
     results = {}
     with compression_session(enabled=compression_enabled) as model:
-        for task in tasks:
-            label = "ON " if compression_enabled else "OFF"
-            print(f"[{label}] {task['id']} ...", flush=True)
+        for number, task in enumerate(tasks, start=1):
+            print(f"  [{number}/{len(tasks)}] {task['id']}: asking the agent ...", flush=True)
+            started = time.time()
             attempts = [run_agent(task["question"], model) for _ in range(runs)]
             results[task["id"]] = {
                 "input_tokens": sum(a["input_tokens"] for a in attempts) / runs,
@@ -40,6 +41,12 @@ def run_mode(tasks: list, runs: int, compression_enabled: bool) -> dict:
                 "llm_calls": sum(a["llm_calls"] for a in attempts) / runs,
                 "answer": attempts[0]["answer"],  # first run's answer, for side-by-side display
             }
+            r = results[task["id"]]
+            print(
+                f"        done in {time.time() - started:.0f}s: {r['llm_calls']:.0f} LLM calls, "
+                f"{r['input_tokens']:,.0f} input + {r['output_tokens']:,.0f} output tokens, ${r['cost']:.4f}",
+                flush=True,
+            )
     return results
 
 
@@ -115,8 +122,16 @@ def main() -> int:
 
     tasks = load_tasks()
     runs = config["benchmark"]["runs"]
+    print(f"Token Gate benchmark: {len(tasks)} tasks x {runs} run(s) per mode, model {config['llm']['model']}")
+    print("Each task is asked twice: first with compression OFF (baseline), then ON "
+          f"(Headroom, {config['headroom']['mode']} mode). Same questions, same tools.\n")
+
+    print("Step 1/3  Baseline: compression OFF - the full tool output goes to the model")
     off = run_mode(tasks, runs, compression_enabled=False)
+    print("\nStep 2/3  Compressed: compression ON - Headroom shrinks the tool output first")
     on = run_mode(tasks, runs, compression_enabled=True)
+
+    print("\nStep 3/3  Comparing both runs and extrapolating to the org ...")
     report = build_report(tasks, off, on, config)
 
     RESULTS_DIR.mkdir(exist_ok=True)
@@ -124,7 +139,7 @@ def main() -> int:
     path.write_text(json.dumps(report, indent=2))
 
     t, e = report["totals"], report["extrapolation"]
-    print(f"\nTokens:  {t['tokens_before']:.0f} -> {t['tokens_after']:.0f}  ({t['compression_pct']}% fewer)")
+    print(f"\nResults:\nTokens:  {t['tokens_before']:.0f} -> {t['tokens_after']:.0f}  ({t['compression_pct']}% fewer)")
     print(f"Cost:    ${t['cost_before']:.4f} -> ${t['cost_after']:.4f}  (saved ${t['cost_saved']:.4f})")
     print(f"Monthly org savings ({e['devs']} devs x {e['requests_per_day']} req/day): ${e['monthly_savings']:,.2f}")
     print(f"Saved: {path.relative_to(ROOT)}")

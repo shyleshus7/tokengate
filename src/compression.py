@@ -49,6 +49,7 @@ def _headroom_proxy(port: int):
     """Start `headroom proxy` for the duration of the block, then stop it."""
     if _port_is_open(port):
         raise RuntimeError(f"Port {port} is already in use. Change headroom.proxy_port in config.yaml.")
+    print(f"      Starting Headroom proxy on port {port} ...", flush=True)
     proc = subprocess.Popen(
         ["headroom", "proxy", "--port", str(port)],
         stdout=subprocess.DEVNULL,
@@ -60,10 +61,12 @@ def _headroom_proxy(port: int):
             if proc.poll() is not None or time.time() > deadline:
                 raise RuntimeError("headroom proxy failed to start. Run `python -m src.check_headroom`.")
             time.sleep(0.5)
+        print("      Headroom proxy is ready.", flush=True)
         yield
     finally:
         proc.terminate()
         proc.wait()
+        print("      Headroom proxy stopped.", flush=True)
 
 
 @contextmanager

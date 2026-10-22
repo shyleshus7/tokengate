@@ -3,8 +3,11 @@
 Run from the repo root:  python -m src.agent [--compression on|off] ["your question"]
 """
 
+import asyncio
+import logging
 import os
 import sys
+import warnings
 
 import litellm
 from google.adk.agents import LlmAgent
@@ -14,6 +17,11 @@ from google.genai import types
 from src.compression import compression_session
 from src.config import load_config
 from src.tools import get_recent_logs, list_github_issues, search_runbooks
+
+# Keep terminal output readable: hide known-harmless library noise.
+warnings.filterwarnings("ignore", message=".*EXPERIMENTAL.*")
+logging.getLogger("LiteLLM").setLevel(logging.ERROR)
+litellm.suppress_debug_info = True
 
 DEFAULT_QUESTION = (
     "Checkout is failing in production. Check the recent logs, the open GitHub issues, "
@@ -57,7 +65,7 @@ def run_agent(question: str, model) -> dict:
     agent.after_model_callback = count_usage
 
     runner = InMemoryRunner(agent=agent, app_name="tokengate")
-    session = runner.session_service.create_session_sync(app_name="tokengate", user_id="demo")
+    session = asyncio.run(runner.session_service.create_session(app_name="tokengate", user_id="demo"))
     message = types.Content(role="user", parts=[types.Part(text=question)])
 
     answer = ""
