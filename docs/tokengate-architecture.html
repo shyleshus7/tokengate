@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TokenGate — Architecture: With vs Without Headroom</title>
+<title>Token Gate — Architecture: With vs Without the LiteLLM Gateway</title>
 <style>
   :root{
     --ink:#1c2733;
@@ -58,7 +58,7 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>TokenGate — Org LLM Traffic, With vs Without the Headroom Gateway</h1>
+    <h1>Token Gate — Org LLM Traffic, With vs Without the LiteLLM Gateway</h1>
     <p>Same agents, same answers — the gateway shrinks what travels to the provider (100% → ~10–40% of tokens).</p>
   </header>
 
@@ -66,9 +66,9 @@
 
     <!-- ============ WITHOUT ============ -->
     <div class="panel before">
-      <h2>Without Headroom — today</h2>
+      <h2>Without Token Gate — today</h2>
       <p class="sub">Every developer &amp; agent sends full-fat context straight to the provider.</p>
-      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture without Headroom">
+      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture without Token Gate">
         <defs>
           <marker id="ah-r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
             <path d="M0,0 L7,3 L0,6 Z" fill="#8fa0ae"/>
@@ -131,9 +131,9 @@
 
     <!-- ============ WITH ============ -->
     <div class="panel after">
-      <h2>With TokenGate — Headroom gateway</h2>
+      <h2>With Token Gate — LiteLLM gateway</h2>
       <p class="sub">All traffic routes through one gateway: compress first, then call the provider.</p>
-      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture with Headroom gateway">
+      <svg viewBox="0 0 540 560" role="img" aria-label="Architecture with the Token Gate LiteLLM gateway">
         <defs>
           <marker id="ah-r2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse">
             <path d="M0,0 L7,3 L0,6 Z" fill="#8fa0ae"/>
@@ -172,8 +172,8 @@
 
         <!-- Gateway box -->
         <rect x="216" y="96" width="150" height="180" rx="6" fill="#e3edf7" stroke="#2b6cb0" stroke-width="2"/>
-        <text x="291" y="120" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1c4e82">TOKENGATE</text>
-        <text x="291" y="136" text-anchor="middle" font-size="10.5" fill="#2b6cb0">Headroom + LiteLLM</text>
+        <text x="291" y="120" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1c4e82">TOKEN GATE</text>
+        <text x="291" y="136" text-anchor="middle" font-size="10.5" fill="#2b6cb0">LiteLLM + Headroom</text>
         <g font-size="10.5" fill="#1c2733">
           <rect x="230" y="148" width="122" height="24" rx="3" fill="#ffffff" stroke="#9db8d2"/>
           <text x="291" y="164" text-anchor="middle">ContentRouter</text>
@@ -217,8 +217,8 @@
 
   <div class="legend">
     <span class="key"><span class="swatch sw-heavy"></span> request flow</span>
-    <span class="key"><span class="swatch sw-lean"></span> compressed flow (after Headroom)</span>
-    <span class="key"><span class="sw-box"></span> TokenGate gateway (shared, org-wide)</span>
+    <span class="key"><span class="swatch sw-lean"></span> compressed flow (after Token Gate)</span>
+    <span class="key"><span class="sw-box"></span> Token Gate LiteLLM gateway (shared, org-wide)</span>
     <span class="note">Compression happens inside the org — data stays local; only the lean prompt reaches the provider.</span>
   </div>
 </div>

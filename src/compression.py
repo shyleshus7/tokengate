@@ -90,6 +90,6 @@ def compression_session(enabled: bool | None = None):
     elif headroom["mode"] == "proxy":
         port = headroom["proxy_port"]
         with _headroom_proxy(port):
-            yield LiteLlm(model=model_name, api_base=f"http://127.0.0.1:{port}/v1")
+            yield LiteLlm(model=model_name, api_base=f"http://127.0.0.1:{port}")
     else:
         raise ValueError(f"Unknown headroom.mode '{headroom['mode']}' (use 'callback' or 'proxy').")
