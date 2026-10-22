@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fusion Force Gateway on Google Cloud: LiteLLM + Headroom + Vertex AI</title>
+<style>
+  :root{
+    --ink:#1c2733; --paper:#eef2f5; --panel:#ffffff; --line:#c4ced6;
+    --lean:#1f9d6b; --accent:#2b6cb0; --gcp:#4285f4;
+    --mono:'SFMono-Regular',ui-monospace,'Cascadia Mono','Roboto Mono',Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--mono);padding:28px 24px 32px}
+  .wrap{max-width:1232px;margin:0 auto}
+  h1{font-size:21px;font-weight:700;letter-spacing:.02em}
+  p.sub{font-size:12.5px;color:#4a5a68;margin:6px 0 16px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+  svg{width:100%;height:auto;display:block;background:var(--panel);border:1.5px solid var(--line);border-radius:6px}
+  svg text{font-family:var(--mono);fill:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Fusion Force Gateway on Google Cloud: LiteLLM + Headroom + Vertex AI</h1>
+  <p class="sub">Agents point at one gateway. It compresses tool output, then calls Gemini on Vertex AI with Google credentials, with no API keys.</p>
+
+  <svg viewBox="0 0 1200 600" role="img" aria-label="High-level architecture: agents call the Fusion Force Gateway gateway (LiteLLM plus Headroom) running in a Google Cloud project, which calls Vertex AI Gemini using a service account">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="#8a9bab"/>
+      </marker>
+      <marker id="arrG" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="#1f9d6b"/>
+      </marker>
+      <marker id="arrB" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M0,0 L10,5 L0,10 z" fill="#2b6cb0"/>
+      </marker>
+    </defs>
+
+    <!-- Clients -->
+    <text x="30" y="46" font-size="12" font-weight="700" fill="#4a5a68" style="fill:#4a5a68;letter-spacing:.08em">CLIENTS</text>
+    <g font-size="13">
+      <rect x="30" y="64" width="200" height="74" rx="6" fill="#f7f9fb" stroke="#8a9bab" stroke-width="1.5"/>
+      <text x="130" y="94" text-anchor="middle" font-weight="700">ADK agents</text>
+      <text x="130" y="116" text-anchor="middle" font-size="11" style="fill:#4a5a68">logs · tickets · search</text>
+
+      <rect x="30" y="176" width="200" height="74" rx="6" fill="#f7f9fb" stroke="#8a9bab" stroke-width="1.5"/>
+      <text x="130" y="206" text-anchor="middle" font-weight="700">Coding agents</text>
+      <text x="130" y="228" text-anchor="middle" font-size="11" style="fill:#4a5a68">file reads · repo search</text>
+
+      <rect x="30" y="288" width="200" height="74" rx="6" fill="#f7f9fb" stroke="#8a9bab" stroke-width="1.5"/>
+      <text x="130" y="318" text-anchor="middle" font-weight="700">CI pipelines</text>
+      <text x="130" y="340" text-anchor="middle" font-size="11" style="fill:#4a5a68">test logs · RAG chunks</text>
+    </g>
+    <text x="130" y="392" text-anchor="middle" font-size="11" style="fill:#4a5a68">unchanged code:</text>
+    <text x="130" y="408" text-anchor="middle" font-size="11" style="fill:#4a5a68">only api_base points</text>
+    <text x="130" y="424" text-anchor="middle" font-size="11" style="fill:#4a5a68">at the gateway</text>
+
+    <!-- arrows clients -> gateway -->
+    <path d="M230,101 C300,101 300,250 366,250" fill="none" stroke="#8a9bab" stroke-width="2" marker-end="url(#arr)"/>
+    <path d="M230,213 C300,213 320,250 366,250" fill="none" stroke="#8a9bab" stroke-width="2" marker-end="url(#arr)"/>
+    <path d="M230,325 C300,325 300,250 366,250" fill="none" stroke="#8a9bab" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="300" y="456" text-anchor="middle" font-size="11" style="fill:#4a5a68"></text>
+
+    <!-- GCP boundary -->
+    <rect x="330" y="30" width="842" height="548" rx="12" fill="#f4f8ff" stroke="#4285f4" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="350" y="56" font-size="12" font-weight="700" style="fill:#2f66c9;letter-spacing:.08em">GOOGLE CLOUD PROJECT</text>
+
+    <!-- Gateway -->
+    <rect x="366" y="90" width="400" height="330" rx="8" fill="#e3edf7" stroke="#2b6cb0" stroke-width="2.5"/>
+    <text x="566" y="120" text-anchor="middle" font-size="15" font-weight="700" style="fill:#1c4e82">FUSION FORCE GATEWAY</text>
+    <text x="566" y="140" text-anchor="middle" font-size="11" style="fill:#2b6cb0">runs on Cloud Run or GKE (one shared service)</text>
+
+    <g font-size="12.5">
+      <rect x="392" y="160" width="348" height="72" rx="6" fill="#ffffff" stroke="#9db8d2" stroke-width="1.5"/>
+      <circle cx="418" cy="196" r="12" fill="#2b6cb0"/><text x="418" y="200.5" text-anchor="middle" font-size="12" font-weight="700" style="fill:#fff">1</text>
+      <text x="440" y="190" font-weight="700">LiteLLM gateway</text>
+      <text x="440" y="210" font-size="11" style="fill:#4a5a68">receives requests, routes to Vertex AI</text>
+
+      <rect x="392" y="248" width="348" height="72" rx="6" fill="#ffffff" stroke="#1f9d6b" stroke-width="2"/>
+      <circle cx="418" cy="284" r="12" fill="#1f9d6b"/><text x="418" y="288.5" text-anchor="middle" font-size="12" font-weight="700" style="fill:#fff">2</text>
+      <text x="440" y="278" font-weight="700">Headroom compression</text>
+      <text x="440" y="298" font-size="11" style="fill:#4a5a68">shrinks verbose tool output (JSON, logs)</text>
+
+      <rect x="392" y="336" width="348" height="68" rx="6" fill="#ffffff" stroke="#9db8d2" stroke-width="1.5"/>
+      <circle cx="418" cy="370" r="12" fill="#2b6cb0"/><text x="418" y="374.5" text-anchor="middle" font-size="12" font-weight="700" style="fill:#fff">3</text>
+      <text x="440" y="364" font-weight="700">Usage and cost meter</text>
+      <text x="440" y="384" font-size="11" style="fill:#4a5a68">tokens and dollars per request</text>
+    </g>
+    <path d="M566,232 L566,246" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrB)"/>
+    <path d="M566,320 L566,334" stroke="#2b6cb0" stroke-width="2" marker-end="url(#arrB)"/>
+
+    <!-- Vertex AI -->
+    <rect x="930" y="150" width="212" height="210" rx="8" fill="#eaf7f0" stroke="#1f9d6b" stroke-width="2.5"/>
+    <text x="1036" y="184" text-anchor="middle" font-size="15" font-weight="700" style="fill:#177a52">Vertex AI</text>
+    <text x="1036" y="208" text-anchor="middle" font-size="12" style="fill:#177a52">Gemini Flash 3 Lite</text>
+    <rect x="950" y="226" width="172" height="62" rx="5" fill="#ffffff" stroke="#9fd3b9"/>
+    <text x="1036" y="250" text-anchor="middle" font-size="11" style="fill:#4a5a68">billed per input and</text>
+    <text x="1036" y="268" text-anchor="middle" font-size="11" style="fill:#4a5a68">output token</text>
+    <text x="1036" y="322" text-anchor="middle" font-size="11" style="fill:#4a5a68">region: us-central1</text>
+    <text x="1036" y="340" text-anchor="middle" font-size="11" style="fill:#4a5a68">(set in config.yaml)</text>
+
+    <!-- gateway -> vertex -->
+    <path d="M766,230 L928,230" stroke="#1f9d6b" stroke-width="3" marker-end="url(#arrG)"/>
+    <text x="847" y="218" text-anchor="middle" font-size="11" font-weight="700" style="fill:#177a52">compressed</text>
+    <text x="847" y="248" text-anchor="middle" font-size="11" font-weight="700" style="fill:#177a52">prompt</text>
+    <path d="M928,290 L766,290" stroke="#8a9bab" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+    <text x="847" y="308" text-anchor="middle" font-size="11" style="fill:#4a5a68">response</text>
+
+    <!-- IAM -->
+    <rect x="366" y="466" width="400" height="86" rx="8" fill="#ffffff" stroke="#4285f4" stroke-width="1.8"/>
+    <text x="566" y="494" text-anchor="middle" font-size="13" font-weight="700" style="fill:#2f66c9">Service account + ADC</text>
+    <text x="566" y="515" text-anchor="middle" font-size="11" style="fill:#4a5a68">Google Application Default Credentials</text>
+    <text x="566" y="533" text-anchor="middle" font-size="11" style="fill:#4a5a68">role: Vertex AI User · no API keys to manage</text>
+    <path d="M566,466 L566,424" stroke="#4285f4" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrB)"/>
+    <path d="M766,509 L1158,509 L1158,255 L1144,255" fill="none" stroke="#4285f4" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrB)"/>
+    <text x="900" y="498" text-anchor="middle" font-size="11" style="fill:#2f66c9">authenticates calls to Vertex AI</text>
+
+    <!-- Dashboard -->
+    <rect x="930" y="396" width="212" height="70" rx="8" fill="#ffffff" stroke="#2b6cb0" stroke-width="1.8"/>
+    <text x="1036" y="424" text-anchor="middle" font-size="13" font-weight="700" style="fill:#1c4e82">Savings dashboard</text>
+    <text x="1036" y="445" text-anchor="middle" font-size="11" style="fill:#4a5a68">tokens · $ saved · per team</text>
+    <path d="M766,380 C850,380 850,431 928,431" fill="none" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrB)"/>
+    <text x="840" y="368" text-anchor="middle" font-size="11" style="fill:#1c4e82">usage + cost</text>
+  </svg>
+</div>
+</body>
+</html>
